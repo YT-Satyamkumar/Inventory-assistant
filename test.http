@@ -693,7 +693,7 @@ GET {{host}}/inventory-shortage-assistant/getMRPDemand(material='{{material}}',p
 
 
 ### ==================================================================
-### 6. JOULE ASSISTANT — Natural Language Queries
+### 6. JOULE ASSISTANT 
 ### ==================================================================
 
 ### Ask about materials running out
@@ -701,6 +701,7 @@ GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(plant='{
 
 ###
 ### Ask about monthly shortages
+
 GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(plant='{{plant}}')
 
 ###
