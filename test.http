@@ -119,9 +119,6 @@ GET {{host}}/inventory-shortage-assistant/getYearlyShortagesReport(plant='{{plan
 ### Get Materials Running Out This Week (with plant)
 GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOutThisWeek(plant='{{plant}}')
 
-###
-### Get Materials Running Out This Week (specific week)
-GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOutThisWeek(plant='{{plant}}',week='2026-07-20')
 
 ###
 ### Get Materials Running Out This Week (all plants)
