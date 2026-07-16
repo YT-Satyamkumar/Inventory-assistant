@@ -1,0 +1,470 @@
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:20.243867] Added process: "web" (STDOUT, API)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:20.251794] Created app with guid ec4c0e5d-3489-453d-8a41-ba819686eaaf (STDOUT, API)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:20.356223] Updating process: "web" (STDOUT, API)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:20.413507] Scaling process: "web" (STDOUT, API)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:45.836494] Uploading app package for app with guid ec4c0e5d-3489-453d-8a41-ba819686eaaf (STDOUT, API)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:46.020969] Updated app with guid ec4c0e5d-3489-453d-8a41-ba819686eaaf ({"environment_variables"=>"[PRIVATE DATA HIDDEN]"}) (STDOUT, API)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:55.946051] Creating build for app with guid ec4c0e5d-3489-453d-8a41-ba819686eaaf (STDOUT, API)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:56.529807] Downloading nodejs_buildpack... (STDOUT, STG)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:56.578878] Downloaded nodejs_buildpack (STDOUT, STG)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:56.578976] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 creating container for instance f90744c8-e5db-425d-98c7-04b6c5d1dac4 (STDOUT, STG)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:57.470951] Security group rules were updated (STDOUT, STG)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:57.574252] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 successfully created container for instance f90744c8-e5db-425d-98c7-04b6c5d1dac4 (STDOUT, STG)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:58.475755] Downloading app package... (STDOUT, STG)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:58.864047] Downloaded app package (2.3M) (STDOUT, STG)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:59.000493] -----> Nodejs Buildpack version 1.9.2 (STDOUT, STG)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:59.221192] -----> Bootstrapping python (STDOUT, STG)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:59.221228] -----> Installing python 3.13.13 (STDOUT, STG)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:59.221239] Copy [/tmp/buildpacks/17bd89c67d092631/dependencies/268a5e3743d51a14b86ea9da64439307/python_3.13.13_linux_x64_cflinuxfs4_8311abbf.tgz] (STDOUT, STG)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:03.975601] -----> Installing binaries (STDOUT, STG)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:03.975682] engines.node (package.json): >=18 (STDOUT, STG)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:03.975689] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:03.975696] [31;1m**WARNING**[0m Dangerous semver range (>) in engines.node. See: http://docs.cloudfoundry.org/buildpacks/node/node-tips.html (STDOUT, STG)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:03.975809] -----> Installing node 24.15.0 (STDOUT, STG)#
+#2026 07 16 07:49:05.745#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26673#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:03.976189] Copy [/tmp/buildpacks/17bd89c67d092631/dependencies/6441e97e6386f47ec4c16cfdf8db0a17/node_24.15.0_linux_x64_cflinuxfs4_1a62d98b.tgz] (STDOUT, STG)#
+#2026 07 16 07:49:15.916#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42562#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:06.607946] Using default npm version: 11.12.1 (STDOUT, STG)#
+#2026 07 16 07:49:15.916#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42562#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:06.607985] -----> Installing yarn 1.22.22 (STDOUT, STG)#
+#2026 07 16 07:49:15.916#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42562#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:06.608093] Copy [/tmp/buildpacks/17bd89c67d092631/dependencies/e4fe26756e9984a665478d350474fa2e/yarn_1.22.22_linux_noarch_any-stack_b6132b86.tgz] (STDOUT, STG)#
+#2026 07 16 07:49:15.916#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42562#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.009448] Installed yarn 1.22.22 (STDOUT, STG)#
+#2026 07 16 07:49:15.916#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42562#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.009490] -----> Creating runtime environment (STDOUT, STG)#
+#2026 07 16 07:49:15.916#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42562#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.011294] NODE_ENV=production (STDOUT, STG)#
+#2026 07 16 07:49:15.916#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42562#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.011382] NODE_HOME=/tmp/contents945868467/deps/0/node (STDOUT, STG)#
+#2026 07 16 07:49:15.916#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42562#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.011400] NODE_MODULES_CACHE=true (STDOUT, STG)#
+#2026 07 16 07:49:15.916#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42562#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.011409] NODE_VERBOSE=false (STDOUT, STG)#
+#2026 07 16 07:49:15.916#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42562#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.011412] NPM_CONFIG_LOGLEVEL=error (STDOUT, STG)#
+#2026 07 16 07:49:15.916#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42562#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.011417] NPM_CONFIG_PRODUCTION=true (STDOUT, STG)#
+#2026 07 16 07:49:15.916#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42562#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.011476] -----> Building dependencies (STDOUT, STG)#
+#2026 07 16 07:49:15.916#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42562#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.011481] Prebuild detected (node_modules already exists) (STDOUT, STG)#
+#2026 07 16 07:49:15.916#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42562#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.011533] Rebuilding any native modules (STDOUT, STG)#
+#2026 07 16 07:49:15.916#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42562#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.706011] rebuilt dependencies successfully (STDOUT, STG)#
+#2026 07 16 07:49:15.916#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42562#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.772743] Installing any new modules (package.json + package-lock.json) (STDOUT, STG)#
+#2026 07 16 07:49:15.916#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42562#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:08.392053] up to date in 481ms (STDOUT, STG)#
+#2026 07 16 07:49:15.916#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42562#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:08.392696] 4 packages are looking for funding (STDOUT, STG)#
+#2026 07 16 07:49:15.916#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42562#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:08.392841] run `npm fund` for details (STDOUT, STG)#
+#2026 07 16 07:49:15.916#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42562#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:09.203872] Contrast Security no credentials found. Will not write environment files. (STDOUT, STG)#
+#2026 07 16 07:49:26.054#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26253#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:18.853648] Exit status 0 (STDOUT, STG)#
+#2026 07 16 07:49:26.054#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26253#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:18.853705] Uploading droplet, build artifacts cache... (STDOUT, STG)#
+#2026 07 16 07:49:26.054#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26253#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:18.853762] Uploading build artifacts cache... (STDOUT, STG)#
+#2026 07 16 07:49:26.054#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26253#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:18.853763] Uploading droplet... (STDOUT, STG)#
+#2026 07 16 07:49:26.054#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26253#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:18.876268] Uploaded build artifacts cache (217B) (STDOUT, STG)#
+#2026 07 16 07:49:26.054#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26253#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:19.587843] Creating droplet for app with guid ec4c0e5d-3489-453d-8a41-ba819686eaaf (STDOUT, API)#
+#2026 07 16 07:49:26.054#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26253#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:22.653806] Uploaded droplet (58.6M) (STDOUT, STG)#
+#2026 07 16 07:49:26.054#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26253#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:22.676685] Uploading complete (STDOUT, STG)#
+#2026 07 16 07:49:26.054#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26253#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:22.988417] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 stopping instance f90744c8-e5db-425d-98c7-04b6c5d1dac4 (STDOUT, STG)#
+#2026 07 16 07:49:26.054#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26253#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:22.988456] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 destroying container for instance f90744c8-e5db-425d-98c7-04b6c5d1dac4 (STDOUT, STG)#
+#2026 07 16 07:49:26.054#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26253#
+[PollStageAppStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:23.039060] Staging complete for build f90744c8-e5db-425d-98c7-04b6c5d1dac4 (STDOUT, API)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:20.243867] Added process: "web" (STDOUT, API)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:20.251794] Created app with guid ec4c0e5d-3489-453d-8a41-ba819686eaaf (STDOUT, API)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:20.356223] Updating process: "web" (STDOUT, API)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:20.413507] Scaling process: "web" (STDOUT, API)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:45.836494] Uploading app package for app with guid ec4c0e5d-3489-453d-8a41-ba819686eaaf (STDOUT, API)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:46.020969] Updated app with guid ec4c0e5d-3489-453d-8a41-ba819686eaaf ({"environment_variables"=>"[PRIVATE DATA HIDDEN]"}) (STDOUT, API)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:55.946051] Creating build for app with guid ec4c0e5d-3489-453d-8a41-ba819686eaaf (STDOUT, API)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:56.529807] Downloading nodejs_buildpack... (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:56.578878] Downloaded nodejs_buildpack (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:56.578976] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 creating container for instance f90744c8-e5db-425d-98c7-04b6c5d1dac4 (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:57.470951] Security group rules were updated (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:57.574252] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 successfully created container for instance f90744c8-e5db-425d-98c7-04b6c5d1dac4 (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:58.475755] Downloading app package... (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:58.864047] Downloaded app package (2.3M) (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:59.000493] -----> Nodejs Buildpack version 1.9.2 (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:59.221192] -----> Bootstrapping python (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:59.221228] -----> Installing python 3.13.13 (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:48:59.221239] Copy [/tmp/buildpacks/17bd89c67d092631/dependencies/268a5e3743d51a14b86ea9da64439307/python_3.13.13_linux_x64_cflinuxfs4_8311abbf.tgz] (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:03.975601] -----> Installing binaries (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:03.975682] engines.node (package.json): >=18 (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:03.975689] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:03.975696] [31;1m**WARNING**[0m Dangerous semver range (>) in engines.node. See: http://docs.cloudfoundry.org/buildpacks/node/node-tips.html (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:03.975809] -----> Installing node 24.15.0 (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:03.976189] Copy [/tmp/buildpacks/17bd89c67d092631/dependencies/6441e97e6386f47ec4c16cfdf8db0a17/node_24.15.0_linux_x64_cflinuxfs4_1a62d98b.tgz] (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:06.607946] Using default npm version: 11.12.1 (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:06.607985] -----> Installing yarn 1.22.22 (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:06.608093] Copy [/tmp/buildpacks/17bd89c67d092631/dependencies/e4fe26756e9984a665478d350474fa2e/yarn_1.22.22_linux_noarch_any-stack_b6132b86.tgz] (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.009448] Installed yarn 1.22.22 (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.009490] -----> Creating runtime environment (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.011294] NODE_ENV=production (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.011382] NODE_HOME=/tmp/contents945868467/deps/0/node (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.011400] NODE_MODULES_CACHE=true (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.011409] NODE_VERBOSE=false (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.011412] NPM_CONFIG_LOGLEVEL=error (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.011417] NPM_CONFIG_PRODUCTION=true (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.011476] -----> Building dependencies (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.011481] Prebuild detected (node_modules already exists) (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.011533] Rebuilding any native modules (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.706011] rebuilt dependencies successfully (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:07.772743] Installing any new modules (package.json + package-lock.json) (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:08.392053] up to date in 481ms (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:08.392696] 4 packages are looking for funding (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:08.392841] run `npm fund` for details (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:09.203872] Contrast Security no credentials found. Will not write environment files. (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:18.853648] Exit status 0 (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:18.853705] Uploading droplet, build artifacts cache... (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:18.853762] Uploading build artifacts cache... (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:18.853763] Uploading droplet... (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:18.876268] Uploaded build artifacts cache (217B) (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:19.587843] Creating droplet for app with guid ec4c0e5d-3489-453d-8a41-ba819686eaaf (STDOUT, API)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:22.653806] Uploaded droplet (58.6M) (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:22.676685] Uploading complete (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:22.988417] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 stopping instance f90744c8-e5db-425d-98c7-04b6c5d1dac4 (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:22.988456] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 destroying container for instance f90744c8-e5db-425d-98c7-04b6c5d1dac4 (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:23.039060] Staging complete for build f90744c8-e5db-425d-98c7-04b6c5d1dac4 (STDOUT, API)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:26.146795] Updated app with guid ec4c0e5d-3489-453d-8a41-ba819686eaaf ({:droplet_guid=>"64812e4e-86b9-4b9b-99bc-0cad9dab991d"}) (STDOUT, API)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:26.375129] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 successfully destroyed container for instance f90744c8-e5db-425d-98c7-04b6c5d1dac4 (STDOUT, STG)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:26.909879] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 creating container for instance 24db713d-c94e-498c-964d-9b22d0c5b47f (STDOUT, CELL)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:28.023757] Security group rules were updated (STDOUT, CELL)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:28.175975] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 successfully created container for instance 24db713d-c94e-498c-964d-9b22d0c5b47f (STDOUT, CELL)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:33.189447] Invoking pre-start scripts. (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:33.401327] Invoking start command. (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:33.954777] > start (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:33.954817] > node node_modules/@sap/hdi-deploy/deploy.js --use-hdb --parameter com.sap.hana.di.table/try_fast_table_migration=true (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.258684] VCAP_SERVICES: (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.259524] { (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.259545] "hana": [ (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.259548] { (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.259566] "name": "Inventory-assistant-db", (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.259570] "label": "hana", (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.259573] "plan": "hdi-shared", (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.259576] "credentials": { (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.259587] "schema": "A92839A15A284357B6CC9CCA9CED9FCC", (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.259591] "database_id": "f16fafbb-8883-48e8-ac75-e3a0096403de", (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.259595] "user": "A92839A15A284357B6CC9CCA9CED9FCC_2AM1BEBV219YIZHRVPEVLZPDT_RT", (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.259598] "hdi_user": "A92839A15A284357B6CC9CCA9CED9FCC_2AM1BEBV219YIZHRVPEVLZPDT_DT" (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.259600] }, (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.259606] "tags": [ (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.259627] "hana", (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.259631] "database", (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.259632] "relational" (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.259635] ] (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.259639] } (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.259649] ] (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.259651] } (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.807944] @sap/hdi-deploy, version 5.7.0 (mode default), server version 4.00.000.00.1782206579 (4.0.0.0), cloud version 2026.14.8, node version 24.15.0, HDI version 1016, container API version 1007 (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.807978] Deployment started at 2026-07-16 07:49:34 (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.807983] Using hdb@2.29.5 for connection (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.835311] No ignore file at /home/vcap/app/.hdiignore. (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.839669] Collecting files... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.839686] Collecting files... ok (0s 3ms) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.839689] 2 directories collected (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.839691] 3 files collected (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.839693] 0 reusable modules collected (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:34.839697] Target service: Inventory-assistant-db (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.043277] Previous build with request ID 219 finished at 2026-07-16T07:42:40.799 with status Rolled back and message: Starting make in the container "A92839A15A284357B6CC9CCA9CED9FCC" with 0 files to deploy, 0 files to undeploy... ok. (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.043291] Processing revoke files... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.043298] Processing revoke files... ok (0s 0ms) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.043300] Processing grants files... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.043303] Processing grants files... ok (0s 0ms) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.043309] Preprocessing files... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.043313] Preprocessing files... ok (0s 0ms) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.043317] Connecting to the container "A92839A15A284357B6CC9CCA9CED9FCC"... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.110470] Connecting to the container "A92839A15A284357B6CC9CCA9CED9FCC"... ok (0s 68ms) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.110517] Locking the container "A92839A15A284357B6CC9CCA9CED9FCC"... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.305644] Locking the container "A92839A15A284357B6CC9CCA9CED9FCC"... ok (0s 195ms) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.305677] Synchronizing files with the container "A92839A15A284357B6CC9CCA9CED9FCC"... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.477795] Deleting files... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.650485] Deleting files... ok (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.650497] Writing files... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.650503] Writing 2 items (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.803061] Writing files... ok (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.803188] Synchronizing files with the container "A92839A15A284357B6CC9CCA9CED9FCC"... ok (0s 498ms) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.803906] added files: [] (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.803941] modified files: [] (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.804194] Undeploy allowlist file "undeploy.json" found; deleted files will be filtered by the allowlist (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.804816] 7 deleted files are scheduled for undeploy before filtering it by undeploy allowlist (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.804958] deleted files before filtering it by the undeploy allowlist: [ (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.804974] "src/gen/inventory.assistant.ChatHistory.hdbtable", (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.804980] "src/gen/inventory.assistant.InventoryInsights.hdbtable", (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.804982] "src/gen/inventory.assistant.MaterialStocks.hdbtable", (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.804985] "src/gen/inventory.assistant.OutboundDeliveries.hdbtable", (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.804987] "src/gen/inventory.assistant.Reservations.hdbtable", (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.804989] "src/gen/inventory.assistant.SalesOrderItems.hdbtable", (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.804991] "src/gen/inventory.assistant.SalesOrders.hdbtable" (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.804993] ] (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.809916] deleted files: [] (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.810694] WARNING: deleted files not in undeploy.json: [ (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.810713] "src/gen/inventory.assistant.ChatHistory.hdbtable", (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.810717] "src/gen/inventory.assistant.InventoryInsights.hdbtable", (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.810719] "src/gen/inventory.assistant.MaterialStocks.hdbtable", (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.810726] "src/gen/inventory.assistant.OutboundDeliveries.hdbtable", (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.810729] "src/gen/inventory.assistant.Reservations.hdbtable", (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.810731] "src/gen/inventory.assistant.SalesOrderItems.hdbtable", (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.810737] "src/gen/inventory.assistant.SalesOrders.hdbtable" (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.810740] ] (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.810957] 0 modified or added files are scheduled for deploy based on delta detection (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.811489] 0 deleted files are scheduled for undeploy based on delta detection (filtered by undeploy allowlist) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.811750] 0 files are scheduled for deploy based on explicit specification (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.811849] 0 files are scheduled for undeploy based on explicit specification (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:35.812101] Deploying to the container "A92839A15A284357B6CC9CCA9CED9FCC"... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.114667] Starting make in the container "A92839A15A284357B6CC9CCA9CED9FCC" with 0 files to deploy, 0 files to undeploy... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.114724] Disabling table replication for the container schema "A92839A15A284357B6CC9CCA9CED9FCC"... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.114803] Disabling table replication for the container schema "A92839A15A284357B6CC9CCA9CED9FCC"... ok (0s 10ms) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.115033] Migrating libraries... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.115097] Migrating libraries... ok (0s 11ms) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.115144] Making... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.115191] Preparing... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.115228] Preparing... ok (0s 0ms) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.116302] Preparing the make transaction... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.116887] Preparing the make transaction... ok (0s 12ms) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.117074] Calculating dependencies... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.117245] Expanding... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.117653] Expanding... ok (0s 6ms) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.117773] Precompiling... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.118015] Precompiling... ok (0s 0ms) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.118061] Merging... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.118242] Merging... ok (0s 0ms) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.118285] Calculating dependencies... ok (0s 6ms) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.118690] No make necessary (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.118872] Making... ok (0s 51ms) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.118943] Enabling table replication for the container schema "A92839A15A284357B6CC9CCA9CED9FCC"... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.119130] Enabling table replication for the container schema "A92839A15A284357B6CC9CCA9CED9FCC"... ok (0s 12ms) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.119193] Starting make in the container "A92839A15A284357B6CC9CCA9CED9FCC" with 0 files to deploy, 0 files to undeploy... ok (0s 89ms) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.120063] Deploying to the container "A92839A15A284357B6CC9CCA9CED9FCC"... ok (0s 308ms) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.120573] No default-access-role handling needed; global role "A92839A15A284357B6CC9CCA9CED9FCC::access_role" will not be adapted (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.120814] Unlocking the container "A92839A15A284357B6CC9CCA9CED9FCC"... (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.122218] Unlocking the container "A92839A15A284357B6CC9CCA9CED9FCC"... ok (0s 1ms) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.123032] Deployment to container A92839A15A284357B6CC9CCA9CED9FCC done [Deployment ID: none]. (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.126138] Deployment ended at 2026-07-16 07:49:36 (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.127294] (2s 110ms) (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.142392] npm notice (STDERR, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.142412] npm notice New major version of npm available! 11.12.1 -> 12.0.1 (STDERR, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.142416] npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.0.1 (STDERR, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.142419] npm notice To update run: npm install -g npm@12.0.1 (STDERR, APP/TASK/deploy)#
+#2026 07 16 07:49:36.314#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-26691#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.142421] npm notice (STDERR, APP/TASK/deploy)#
+#2026 07 16 07:49:46.814#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42595#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.210575] Exit status 0 (STDOUT, APP/TASK/deploy)#
+#2026 07 16 07:49:46.814#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42595#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.627216] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 stopping instance 24db713d-c94e-498c-964d-9b22d0c5b47f (STDOUT, CELL)#
+#2026 07 16 07:49:46.814#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42595#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:36.627257] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 destroying container for instance 24db713d-c94e-498c-964d-9b22d0c5b47f (STDOUT, CELL)#
+#2026 07 16 07:49:46.814#Z#DEBUG#a9262da0-80ea-11f1-b4c6-eeee0a8be332.Inventory-assistant-db-deployer#flowable-async-job-executor-thread-42595#
+[PollExecuteTaskStatusExecution] ec4c0e5d-3489-453d-8a41-ba819686eaaf [2026-07-16T07:49:39.651896] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 successfully destroyed container for instance 24db713d-c94e-498c-964d-9b22d0c5b47f (STDOUT, CELL)#

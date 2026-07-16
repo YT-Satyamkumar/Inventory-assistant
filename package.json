@@ -1,0 +1,89 @@
+{
+  "name": "Inventory-assistant",
+  "version": "1.0.0",
+  "dependencies": {
+    "@cap-js/hana": "^2",
+    "@sap/cds": "^9",
+    "@sap/xssec": "^4",
+    "@sap-cloud-sdk/connectivity": "^4",
+    "@sap-cloud-sdk/http-client": "^4",
+    "@sap-cloud-sdk/resilience": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2.4",
+    "@sap/cds-dk": "^9"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "private": true,
+  "cds": {
+    "requires": {
+      "[production]": {
+        "auth": "mocked"
+      },
+      "connectivity": true,
+      "destinations": true,
+      "ZAPI_OUTBOUND_DELIVERY_SRV1": {
+        "kind": "odata-v2",
+        "model": "srv/external/ZAPI_OUTBOUND_DELIVERY_SRV1",
+        "[production]": {
+          "credentials": {
+            "destination": "s3d-destination",
+            "path": "/sap/opu/odata/sap/API_OUTBOUND_DELIVERY_SRV"
+          }
+        },
+        "csrf": true,
+        "csrfInBatch": true
+      },
+      "ZAPI_RESERVATION_DOCUMENT_SRV1": {
+        "kind": "odata-v2",
+        "model": "srv/external/ZAPI_RESERVATION_DOCUMENT_SRV1",
+        "[production]": {
+          "credentials": {
+            "destination": "s3d-destination",
+            "path": "/sap/opu/odata/sap/API_RESERVATION_DOCUMENT_SRV"
+          }
+        },
+        "csrf": true,
+        "csrfInBatch": true
+      },
+      "ZAPI_MATERIAL_STOCK_SRV1": {
+        "kind": "odata-v2",
+        "model": "srv/external/ZAPI_MATERIAL_STOCK_SRV1",
+        "[production]": {
+          "credentials": {
+            "destination": "s3d-destination",
+            "path": "/sap/opu/odata/sap/API_MATERIAL_STOCK_SRV"
+          }
+        },
+        "csrf": true,
+        "csrfInBatch": true
+      },
+      "ZAPI_SALES_ORDER_SRV1": {
+        "kind": "odata-v2",
+        "model": "srv/external/ZAPI_SALES_ORDER_SRV1",
+        "[production]": {
+          "credentials": {
+            "destination": "s3d-destination",
+            "path": "/sap/opu/odata/sap/API_SALES_ORDER_SRV"
+          }
+        },
+        "csrf": true,
+        "csrfInBatch": true
+      },
+      "ZBA_SALESORDER_ITEM_SRV1": {
+        "kind": "odata-v2",
+        "model": "srv/external/ZBA_SALESORDER_ITEM_SRV1",
+        "[production]": {
+          "credentials": {
+            "destination": "s3d-destination",
+            "path": "/sap/opu/odata/sap/ZBA_SALESORDER_ITEM_SRV"
+          }
+        },
+        "csrf": true,
+        "csrfInBatch": true
+      }
+    }
+  }
+}

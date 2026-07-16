@@ -1,0 +1,930 @@
+### ==================================================================
+### Inventory Shortage Assistant Service — Manual Test Collection
+### Service path: /inventory-shortage-assistant
+### ==================================================================
+
+@host = https://b6bbf2b9trial-dev-inventory-assistant-srv.cfapps.us10-001.hana.ondemand.com
+
+### Common Test Variables
+@material = TG21
+@material2 = TG12
+@plant = 1710
+@storageLocation = 0001
+@batch = BATCH001
+@reservation = 0000000123
+@deliveryDoc = 0080000123
+
+
+### ==================================================================
+### 1. ENTITY PROJECTIONS (Read-only OData)
+### ==================================================================
+
+### Reservations — all
+GET {{host}}/inventory-shortage-assistant/Reservations
+
+
+###
+### Reservations — open only
+GET {{host}}/inventory-shortage-assistant/Reservations?$filter=ReservationItemIsFinallyIssued eq false
+
+###
+### MaterialStocks — all
+GET {{host}}/inventory-shortage-assistant/MaterialStocks
+
+###
+### MaterialStocks — filtered by material
+GET {{host}}/inventory-shortage-assistant/MaterialStocks?$filter=Material eq '{{material}}'
+
+###
+### MaterialStocks — filtered by material and plant
+GET {{host}}/inventory-shortage-assistant/MaterialStocks?$filter=Material eq '{{material}}' and Plant eq '{{plant}}'
+
+###
+### MaterialStocks — filtered by storage location
+GET {{host}}/inventory-shortage-assistant/MaterialStocks?$filter=StorageLocation eq '{{storageLocation}}'
+
+###
+### SalesOrderItems — filtered by material
+GET {{host}}/inventory-shortage-assistant/SalesOrderItems?$filter=Material eq '{{material2}}'
+
+###
+### SalesOrderItems — filtered by material and plant
+GET {{host}}/inventory-shortage-assistant/SalesOrderItems?$filter=Material eq '{{material2}}' and ProductionPlant eq '{{plant}}'
+
+###
+### OutboundDeliveries — filtered by delivery document
+GET {{host}}/inventory-shortage-assistant/OutboundDeliveries?$filter=DeliveryDocument eq '{{deliveryDoc}}'
+
+###
+### OutboundDeliveries — filtered by material
+GET {{host}}/inventory-shortage-assistant/OutboundDeliveries?$filter=Material eq '{{material}}'
+
+###
+### SalesOrderAnalytics — filtered by product/plant/period
+GET {{host}}/inventory-shortage-assistant/SalesOrderAnalytics?$filter=ProductID eq '{{material2}}' and Plant eq '{{plant}}' and Year eq '2025' and Month eq '01'
+
+
+### ==================================================================
+### 2. JOULE-FRIENDLY RESPONSE FUNCTIONS (Matching Screenshot)
+### ==================================================================
+
+### Get Materials Running Out (Default - Weekly)
+GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOut(plant='{{plant}}')
+
+###
+### Get Materials Running Out (Monthly)
+GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOut(plant='{{plant}}',period='month')
+
+###
+### Get Materials Running Out (Yearly)
+GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOut(plant='{{plant}}',period='year')
+
+###
+### Get Materials Running Out (All Plants)
+GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOut()
+
+
+### ==================================================================
+### 3. PERIODIC SHORTAGE REPORTS (Date-Month-Year Format)
+### ==================================================================
+
+### Weekly Shortages Report
+GET {{host}}/inventory-shortage-assistant/getWeeklyShortagesReport(plant='{{plant}}')
+
+###
+### Weekly Shortages Report (Specific Week)
+GET {{host}}/inventory-shortage-assistant/getWeeklyShortagesReport(plant='{{plant}}',week='2026-07-20')
+
+###
+### Monthly Shortages Report
+GET {{host}}/inventory-shortage-assistant/getMonthlyShortagesReport(plant='{{plant}}')
+
+###
+### Monthly Shortages Report (Specific Month)
+GET {{host}}/inventory-shortage-assistant/getMonthlyShortagesReport(plant='{{plant}}',month='2026-07-01')
+
+###
+### Yearly Shortages Report
+GET {{host}}/inventory-shortage-assistant/getYearlyShortagesReport(plant='{{plant}}')
+
+###
+### Yearly Shortages Report (Specific Year)
+GET {{host}}/inventory-shortage-assistant/getYearlyShortagesReport(plant='{{plant}}',year='2026-01-01')
+
+
+### ==================================================================
+### 4. CORE FUNCTIONS — Main Joule Skills
+### ==================================================================
+
+### Get Materials Running Out This Week (with plant)
+GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOutThisWeek(plant='{{plant}}')
+
+###
+### Get Materials Running Out This Week (specific week)
+GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOutThisWeek(plant='{{plant}}',week='2026-07-20')
+
+###
+### Get Materials Running Out This Week (all plants)
+GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOutThisWeek()
+
+###
+### Get Material Shortage Detail (full analysis)
+GET {{host}}/inventory-shortage-assistant/getMaterialShortageDetail(material='{{material}}',plant='{{plant}}')
+
+###
+### Get Material Shortage Detail (without plant)
+GET {{host}}/inventory-shortage-assistant/getMaterialShortageDetail(material='{{material}}')
+
+###
+### Get Materials At Risk (All severities)
+GET {{host}}/inventory-shortage-assistant/getMaterialsAtRisk()
+
+###
+### Get Materials At Risk (CRITICAL only)
+GET {{host}}/inventory-shortage-assistant/getMaterialsAtRisk(severity='CRITICAL')
+
+###
+### Get Materials At Risk (HIGH severity)
+GET {{host}}/inventory-shortage-assistant/getMaterialsAtRisk(severity='HIGH')
+
+###
+### Get Materials At Risk (MEDIUM severity)
+GET {{host}}/inventory-shortage-assistant/getMaterialsAtRisk(severity='MEDIUM')
+
+###
+### Get Shortage Status (Quick Response)
+GET {{host}}/inventory-shortage-assistant/getShortageStatus(material='{{material}}',plant='{{plant}}')
+
+###
+### Get Shortage Status (All plants)
+GET {{host}}/inventory-shortage-assistant/getShortageStatus(material='{{material}}')
+
+###
+### Get Recommended Actions (by plant)
+GET {{host}}/inventory-shortage-assistant/getRecommendedActions(plant='{{plant}}')
+
+###
+### Get Recommended Actions (All plants)
+GET {{host}}/inventory-shortage-assistant/getRecommendedActions()
+
+###
+### Get Weekly Shortage Trend (4 weeks)
+GET {{host}}/inventory-shortage-assistant/getWeeklyShortageTrend(material='{{material}}',plant='{{plant}}',weeks=4)
+
+###
+### Get Weekly Shortage Trend (8 weeks)
+GET {{host}}/inventory-shortage-assistant/getWeeklyShortageTrend(material='{{material}}',plant='{{plant}}',weeks=8)
+
+###
+### Get Weekly Shortage Trend (Default 4 weeks)
+GET {{host}}/inventory-shortage-assistant/getWeeklyShortageTrend(material='{{material}}',plant='{{plant}}')
+
+
+### ==================================================================
+### 5. UTILITY FUNCTIONS
+### ==================================================================
+
+### Get Stock Level (Full parameters)
+GET {{host}}/inventory-shortage-assistant/getStockLevel(material='{{material}}',plant='{{plant}}',storageLocation='{{storageLocation}}',batch='{{batch}}')
+
+###
+### Get Stock Level (Material + Plant only)
+GET {{host}}/inventory-shortage-assistant/getStockLevel(material='{{material}}',plant='{{plant}}')
+
+###
+### Get Stock Level (Material only)
+GET {{host}}/inventory-shortage-assistant/getStockLevel(material='{{material}}')
+
+###
+### Get Open Reservations (with material and plant)
+GET {{host}}/inventory-shortage-assistant/getOpenReservations(material='{{material}}',plant='{{plant}}')
+
+###
+### Get Open Reservations (material only)
+GET {{host}}/inventory-shortage-assistant/getOpenReservations(material='{{material}}')
+
+###
+### Get Open Reservations (All open)
+GET {{host}}/inventory-shortage-assistant/getOpenReservations()
+
+###
+### Get Sales Order Demand
+GET {{host}}/inventory-shortage-assistant/getSalesOrderDemand(material='{{material2}}',plant='{{plant}}')
+
+###
+### Get MRP Demand
+GET {{host}}/inventory-shortage-assistant/getMRPDemand(material='{{material}}',plant='{{plant}}',week='2026-07-20')
+
+###
+### Get MRP Demand (current week)
+GET {{host}}/inventory-shortage-assistant/getMRPDemand(material='{{material}}',plant='{{plant}}')
+
+
+### ==================================================================
+### 6. JOULE ASSISTANT — Natural Language Queries
+### ==================================================================
+
+### Ask about materials running out
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(plant='{{plant}}')?question='Which materials will run out this week?'
+
+###
+### Ask about monthly shortages
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(plant='{{plant}}')?question='Show me monthly shortage report'
+
+###
+### Ask about yearly shortages
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(plant='{{plant}}')?question='What is the yearly shortage summary?'
+
+###
+### Ask for detailed analysis
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(material='{{material}}',plant='{{plant}}')?question='Give me detailed shortage analysis'
+
+###
+### Ask about stock level
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(material='{{material}}',plant='{{plant}}')?question='What is the current stock level?'
+
+###
+### Ask about reservations
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(material='{{material}}',plant='{{plant}}')?question='Show me open reservations'
+
+###
+### Ask about sales orders
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(material='{{material2}}',plant='{{plant}}')?question='What is the sales order demand?'
+
+###
+### Ask for recommendations
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(material='{{material}}',plant='{{plant}}')?question='What should I do about shortage?'
+
+###
+### Ask for trend/forecast
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(material='{{material}}',plant='{{plant}}')?question='Show me the trend for next few weeks'
+
+###
+### Ask for status check
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(material='{{material}}',plant='{{plant}}')?question='Check status'
+
+###
+### Ask about materials at risk
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(plant='{{plant}}')?question='Which materials are at risk this week?'
+
+###
+### General question (fallback)
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(material='{{material}}',plant='{{plant}}')?question='Hello, can you help me with inventory?'
+
+
+### ==================================================================
+### 7. PREDICTIVE FUNCTIONS
+### ==================================================================
+
+### Predict Shortages (4 weeks ahead - default)
+GET {{host}}/inventory-shortage-assistant/predictShortages(plant='{{plant}}')
+
+###
+### Predict Shortages (8 weeks ahead)
+GET {{host}}/inventory-shortage-assistant/predictShortages(plant='{{plant}}',weeksAhead=8)
+
+###
+### Predict Shortages (12 weeks ahead - max)
+GET {{host}}/inventory-shortage-assistant/predictShortages(plant='{{plant}}',weeksAhead=12)
+
+###
+### Predict Shortages (All plants)
+GET {{host}}/inventory-shortage-assistant/predictShortages()
+
+
+### ==================================================================
+### 8. ACTIONS — State-Changing Operations (POST)
+### ==================================================================
+
+### Trigger Procurement
+POST {{host}}/inventory-shortage-assistant/triggerProcurement
+Content-Type: application/json
+
+{
+  "material": "{{material}}",
+  "plant": "{{plant}}",
+  "quantity": 500,
+  "requiredBy": "2026-08-15",
+  "priority": "HIGH"
+}
+
+###
+### Create Purchase Requisition
+POST {{host}}/inventory-shortage-assistant/createPurchaseRequisition
+Content-Type: application/json
+
+{
+  "material": "{{material}}",
+  "plant": "{{plant}}",
+  "quantity": 190,
+  "deliveryDate": "2026-08-20",
+  "purchasingGroup": "PG01"
+}
+
+###
+### Request Production Rescheduling
+POST {{host}}/inventory-shortage-assistant/requestProductionRescheduling
+Content-Type: application/json
+
+{
+  "material": "{{material}}",
+  "plant": "{{plant}}",
+  "newDate": "2026-08-01",
+  "reason": "Material shortage - procurement delayed"
+}
+
+###
+### Suggest Alternate Sourcing
+POST {{host}}/inventory-shortage-assistant/suggestAlternateSourcing
+Content-Type: application/json
+
+{
+  "material": "{{material}}",
+  "plant": "{{plant}}",
+  "quantity": 300
+}
+
+
+### ==================================================================
+### 9. BULK TEST — Multi-material Analysis
+### ==================================================================
+
+### Material TG21
+GET {{host}}/inventory-shortage-assistant/getShortageStatus(material='TG22',plant='{{plant}}')
+
+###
+### Material TG12
+GET {{host}}/inventory-shortage-assistant/getShortageStatus(material='TG12',plant='{{plant}}')
+
+###
+### Material TG11
+GET {{host}}/inventory-shortage-assistant/getShortageStatus(material='TG11',plant='{{plant}}')
+
+
+### ==================================================================
+### 10. ERROR HANDLING TESTS
+### ==================================================================
+
+### Invalid plant (should return empty or graceful error)
+GET {{host}}/inventory-shortage-assistant/getShortageStatus(material='{{material}}',plant='INVALID_PLANT')
+
+###
+### Empty question for assistant
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(material='{{material}}',plant='{{plant}}')
+
+###
+### Very large weeks parameter (should cap at 12)
+GET {{host}}/inventory-shortage-assistant/getWeeklyShortageTrend(material='{{material}}',plant='{{plant}}',weeks=100)
+
+###
+### Invalid severity value
+GET {{host}}/inventory-shortage-assistant/getMaterialsAtRisk(severity='INVALID_SEVERITY')
+
+
+### ==================================================================
+### 11. PERFORMANCE & QUICK CHECKS
+### ==================================================================
+
+### Quick status for all critical materials
+GET {{host}}/inventory-shortage-assistant/getMaterialsAtRisk(severity='CRITICAL')
+
+###
+### Quick recommendation summary
+GET {{host}}/inventory-shortage-assistant/getRecommendedActions(plant='{{plant}}')
+
+###
+### Quick stock check for specific material
+GET {{host}}/inventory-shortage-assistant/getStockLevel(material='{{material}}',plant='{{plant}}')
+
+###
+### Quick shortage status for material
+GET {{host}}/inventory-shortage-assistant/getShortageStatus(material='{{material}}',plant='{{plant}}')
+
+###
+### Quick materials running out this week
+GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOutThisWeek(plant='{{plant}}')
+
+
+
+### ==================================================================
+### 13. END-TO-END SCENARIO TESTS
+### ==================================================================
+
+### Complete shortage analysis workflow - Step 1: Check if material is at risk
+GET {{host}}/inventory-shortage-assistant/getShortageStatus(material='{{material}}',plant='{{plant}}')
+
+###
+### Complete shortage analysis workflow - Step 2: Get detailed analysis
+GET {{host}}/inventory-shortage-assistant/getMaterialShortageDetail(material='{{material}}',plant='{{plant}}')
+
+###
+### Complete shortage analysis workflow - Step 3: Get recommendation
+GET {{host}}/inventory-shortage-assistant/getRecommendedActions(plant='{{plant}}')
+
+###
+### Complete shortage analysis workflow - Step 4: Trigger procurement if needed
+POST {{host}}/inventory-shortage-assistant/triggerProcurement
+Content-Type: application/json
+
+{
+  "material": "{{material}}",
+  "plant": "{{plant}}",
+  "quantity": 500,
+  "requiredBy": "2026-08-15",
+  "priority": "HIGH"
+}
+
+###
+### Weekly review scenario - Step 1: Get materials running out this week
+GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOutThisWeek(plant='{{plant}}')
+
+###
+### Weekly review scenario - Step 2: Predict future shortages
+GET {{host}}/inventory-shortage-assistant/predictShortages(plant='{{plant}}',weeksAhead=4)
+
+###
+### Weekly review scenario - Step 3: Get trend analysis for critical material
+GET {{host}}/inventory-shortage-assistant/getWeeklyShortageTrend(material='{{material}}',plant='{{plant}}',weeks=4)
+
+###
+### Joule demo scenario - Step 1: Get simplified running out response
+GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOut(plant='{{plant}}')
+
+###
+### Joule demo scenario - Step 2: Get weekly report with DD-MM-YYYY format
+GET {{host}}/inventory-shortage-assistant/getThisWeekShortages()
+
+### ==================================================================
+### 14. GET THIS WEEK SHORTAGES - Aggregated shortages across all materials
+### ==================================================================
+
+### Get all materials with shortages this week (no plant filter)
+
+
+### Get all materials with shortages this week (no plant filter)
+GET {{host}}/inventory-shortage-assistant/getThisWeekShortages()
+
+
+###
+### Check shortage status for a specific material
+### ==================================================================
+### Inventory Shortage Assistant Service — Manual Test Collection
+### Service path: /inventory-shortage-assistant
+### ==================================================================
+
+@host = https://b6bbf2b9trial-dev-inventory-assistant-srv.cfapps.us10-001.hana.ondemand.com
+
+### Common Test Variables
+@material = TG21
+@material2 = TG12
+@plant = 1710
+@storageLocation = 0001
+@batch = BATCH001
+@reservation = 0000000123
+@deliveryDoc = 0080000123
+
+
+### ==================================================================
+### 1. ENTITY PROJECTIONS (Read-only OData)
+### ==================================================================
+
+### Reservations — all
+GET {{host}}/inventory-shortage-assistant/Reservations
+
+###
+### Reservations — filtered by reservation number
+GET {{host}}/inventory-shortage-assistant/Reservations?$filter=Reservation eq '{{reservation}}'
+
+###
+### Reservations — open only
+GET {{host}}/inventory-shortage-assistant/Reservations?$filter=ReservationItemIsFinallyIssued eq false
+
+###
+### MaterialStocks — all
+GET {{host}}/inventory-shortage-assistant/MaterialStocks
+
+###
+### MaterialStocks — filtered by material
+GET {{host}}/inventory-shortage-assistant/MaterialStocks?$filter=Material eq '{{material}}'
+
+###
+### MaterialStocks — filtered by material and plant
+GET {{host}}/inventory-shortage-assistant/MaterialStocks?$filter=Material eq '{{material}}' and Plant eq '{{plant}}'
+
+###
+### MaterialStocks — filtered by storage location
+GET {{host}}/inventory-shortage-assistant/MaterialStocks?$filter=StorageLocation eq '{{storageLocation}}'
+
+###
+### SalesOrderItems — filtered by material
+GET {{host}}/inventory-shortage-assistant/SalesOrderItems?$filter=Material eq '{{material2}}'
+
+###
+### SalesOrderItems — filtered by material and plant
+GET {{host}}/inventory-shortage-assistant/SalesOrderItems?$filter=Material eq '{{material2}}' and ProductionPlant eq '{{plant}}'
+
+###
+### OutboundDeliveries — filtered by delivery document
+GET {{host}}/inventory-shortage-assistant/OutboundDeliveries?$filter=DeliveryDocument eq '{{deliveryDoc}}'
+
+###
+### OutboundDeliveries — filtered by material
+GET {{host}}/inventory-shortage-assistant/OutboundDeliveries?$filter=Material eq '{{material}}'
+
+###
+### SalesOrderAnalytics — filtered by product/plant/period
+GET {{host}}/inventory-shortage-assistant/SalesOrderAnalytics?$filter=ProductID eq '{{material2}}' and Plant eq '{{plant}}' and Year eq '2025' and Month eq '01'
+
+
+### ==================================================================
+### 2. JOULE-FRIENDLY RESPONSE FUNCTIONS (Matching Screenshot)
+### ==================================================================
+
+### Get Materials Running Out (Default - Weekly)
+GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOut(plant='{{plant}}')
+
+###
+### Get Materials Running Out (Monthly)
+GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOut(plant='{{plant}}',period='month')
+
+###
+### Get Materials Running Out (Yearly)
+GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOut(plant='{{plant}}',period='year')
+
+###
+### Get Materials Running Out (All Plants)
+GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOut()
+
+
+### ==================================================================
+### 3. PERIODIC SHORTAGE REPORTS (Date-Month-Year Format)
+### ==================================================================
+
+### Weekly Shortages Report
+GET {{host}}/inventory-shortage-assistant/getWeeklyShortagesReport(plant='{{plant}}')
+
+###
+### Weekly Shortages Report (Specific Week)
+GET {{host}}/inventory-shortage-assistant/getWeeklyShortagesReport(plant='{{plant}}',week='2026-07-20')
+
+###
+### Monthly Shortages Report
+GET {{host}}/inventory-shortage-assistant/getMonthlyShortagesReport(plant='{{plant}}')
+
+###
+### Monthly Shortages Report (Specific Month)
+GET {{host}}/inventory-shortage-assistant/getMonthlyShortagesReport(plant='{{plant}}',month='2026-07-01')
+
+###
+### Yearly Shortages Report
+GET {{host}}/inventory-shortage-assistant/getYearlyShortagesReport(plant='{{plant}}')
+
+###
+### Yearly Shortages Report (Specific Year)
+GET {{host}}/inventory-shortage-assistant/getYearlyShortagesReport(plant='{{plant}}',year='2026-01-01')
+
+
+### ==================================================================
+### 4. CORE FUNCTIONS — Main Joule Skills
+### ==================================================================
+
+### Get Materials Running Out This Week (with plant)
+GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOutThisWeek(plant='{{plant}}')
+
+###
+### Get Materials Running Out This Week (specific week)
+GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOutThisWeek(plant='{{plant}}',week='2026-07-20')
+
+###
+### Get Materials Running Out This Week (all plants)
+GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOutThisWeek()
+
+###
+### Get Material Shortage Detail (full analysis)
+GET {{host}}/inventory-shortage-assistant/getMaterialShortageDetail(material='{{material}}',plant='{{plant}}')
+
+###
+### Get Material Shortage Detail (without plant)
+GET {{host}}/inventory-shortage-assistant/getMaterialShortageDetail(material='{{material}}')
+
+###
+### Get Materials At Risk (All severities)
+GET {{host}}/inventory-shortage-assistant/getMaterialsAtRisk()
+
+###
+### Get Materials At Risk (CRITICAL only)
+GET {{host}}/inventory-shortage-assistant/getMaterialsAtRisk(severity='CRITICAL')
+
+###
+### Get Materials At Risk (HIGH severity)
+GET {{host}}/inventory-shortage-assistant/getMaterialsAtRisk(severity='HIGH')
+
+###
+### Get Materials At Risk (MEDIUM severity)
+GET {{host}}/inventory-shortage-assistant/getMaterialsAtRisk(severity='MEDIUM')
+
+###
+### Get Shortage Status (Quick Response)
+GET {{host}}/inventory-shortage-assistant/getShortageStatus(material='{{material}}',plant='{{plant}}')
+
+###
+### Get Shortage Status (All plants)
+GET {{host}}/inventory-shortage-assistant/getShortageStatus(material='{{material}}')
+
+###
+### Get Recommended Actions (by plant)
+GET {{host}}/inventory-shortage-assistant/getRecommendedActions(plant='{{plant}}')
+
+###
+### Get Recommended Actions (All plants)
+GET {{host}}/inventory-shortage-assistant/getRecommendedActions()
+
+###
+### Get Weekly Shortage Trend (4 weeks)
+GET {{host}}/inventory-shortage-assistant/getWeeklyShortageTrend(material='{{material}}',plant='{{plant}}',weeks=4)
+
+###
+### Get Weekly Shortage Trend (8 weeks)
+GET {{host}}/inventory-shortage-assistant/getWeeklyShortageTrend(material='{{material}}',plant='{{plant}}',weeks=8)
+
+###
+### Get Weekly Shortage Trend (Default 4 weeks)
+GET {{host}}/inventory-shortage-assistant/getWeeklyShortageTrend(material='{{material}}',plant='{{plant}}')
+
+
+### ==================================================================
+### 5. UTILITY FUNCTIONS
+### ==================================================================
+
+### Get Stock Level (Full parameters)
+GET {{host}}/inventory-shortage-assistant/getStockLevel(material='{{material}}',plant='{{plant}}',storageLocation='{{storageLocation}}',batch='{{batch}}')
+
+###
+### Get Stock Level (Material + Plant only)
+GET {{host}}/inventory-shortage-assistant/getStockLevel(material='{{material}}',plant='{{plant}}')
+
+###
+### Get Stock Level (Material only)
+GET {{host}}/inventory-shortage-assistant/getStockLevel(material='{{material}}')
+
+###
+### Get Open Reservations (with material and plant)
+GET {{host}}/inventory-shortage-assistant/getOpenReservations(material='{{material}}',plant='{{plant}}')
+
+###
+### Get Open Reservations (material only)
+GET {{host}}/inventory-shortage-assistant/getOpenReservations(material='{{material}}')
+
+###
+### Get Open Reservations (All open)
+GET {{host}}/inventory-shortage-assistant/getOpenReservations()
+
+###
+### Get Sales Order Demand
+GET {{host}}/inventory-shortage-assistant/getSalesOrderDemand(material='{{material2}}',plant='{{plant}}')
+
+###
+### Get MRP Demand
+GET {{host}}/inventory-shortage-assistant/getMRPDemand(material='{{material}}',plant='{{plant}}',week='2026-07-20')
+
+###
+### Get MRP Demand (current week)
+GET {{host}}/inventory-shortage-assistant/getMRPDemand(material='{{material}}',plant='{{plant}}')
+
+
+### ==================================================================
+### 6. JOULE ASSISTANT — Natural Language Queries
+### ==================================================================
+
+### Ask about materials running out
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(plant='{{plant}}')?question='Which materials will run out this week?'
+
+###
+### Ask about monthly shortages
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(plant='{{plant}}')
+
+###
+### Ask about yearly shortages
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(plant='{{plant}}')?question='What is the yearly shortage summary?'
+
+###
+### Ask for detailed analysis
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(material='{{material}}',plant='{{plant}}')?question='Give me detailed shortage analysis'
+
+###
+### Ask about stock level
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(material='{{material}}',plant='{{plant}}')?question='What is the current stock level?'
+
+###
+### Ask about reservations
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(material='{{material}}',plant='{{plant}}')?question='Show me open reservations'
+
+###
+### Ask about sales orders
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(material='{{material2}}',plant='{{plant}}')?question='What is the sales order demand?'
+
+###
+### Ask for recommendations
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(material='{{material}}',plant='{{plant}}')?question='What should I do about shortage?'
+
+###
+### Ask for trend/forecast
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(material='{{material}}',plant='{{plant}}')?question='Show me the trend for next few weeks'
+
+###
+### Ask for status check
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(material='{{material}}',plant='{{plant}}')?question='Check status'
+
+###
+### Ask about materials at risk
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(plant='{{plant}}')?question='Which materials are at risk this week?'
+
+###
+### General question (fallback)
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(material='{{material}}',plant='{{plant}}')?question='Hello, can you help me with inventory?'
+
+
+### ==================================================================
+### 7. PREDICTIVE FUNCTIONS
+### ==================================================================
+
+### Predict Shortages (4 weeks ahead - default)
+GET {{host}}/inventory-shortage-assistant/predictShortages(plant='{{plant}}')
+
+###
+### Predict Shortages (8 weeks ahead)
+GET {{host}}/inventory-shortage-assistant/predictShortages(plant='{{plant}}',weeksAhead=8)
+
+###
+### Predict Shortages (12 weeks ahead - max)
+GET {{host}}/inventory-shortage-assistant/predictShortages(plant='{{plant}}',weeksAhead=12)
+
+###
+### Predict Shortages (All plants)
+GET {{host}}/inventory-shortage-assistant/predictShortages()
+
+
+### ==================================================================
+### 8. ACTIONS — State-Changing Operations (POST)
+### ==================================================================
+
+### Trigger Procurement
+POST {{host}}/inventory-shortage-assistant/triggerProcurement
+Content-Type: application/json
+
+{
+  "material": "{{material}}",
+  "plant": "{{plant}}",
+  "quantity": 500,
+  "requiredBy": "2026-08-15",
+  "priority": "HIGH"
+}
+
+###
+### Create Purchase Requisition
+POST {{host}}/inventory-shortage-assistant/createPurchaseRequisition
+Content-Type: application/json
+
+{
+  "material": "{{material}}",
+  "plant": "{{plant}}",
+  "quantity": 190,
+  "deliveryDate": "2026-08-20",
+  "purchasingGroup": "PG01"
+}
+
+###
+### Request Production Rescheduling
+POST {{host}}/inventory-shortage-assistant/requestProductionRescheduling
+Content-Type: application/json
+
+{
+  "material": "{{material}}",
+  "plant": "{{plant}}",
+  "newDate": "2026-08-01",
+  "reason": "Material shortage - procurement delayed"
+}
+
+###
+### Suggest Alternate Sourcing
+POST {{host}}/inventory-shortage-assistant/suggestAlternateSourcing
+Content-Type: application/json
+
+{
+  "material": "{{material}}",
+  "plant": "{{plant}}",
+  "quantity": 300
+}
+
+
+### ==================================================================
+### 9. BULK TEST — Multi-material Analysis
+### ==================================================================
+
+### Material TG21
+GET {{host}}/inventory-shortage-assistant/getShortageStatus(material='TG21',plant='{{plant}}')
+
+###
+### Material TG12
+GET {{host}}/inventory-shortage-assistant/getShortageStatus(material='TG12',plant='{{plant}}')
+
+###
+### Material TG11
+GET {{host}}/inventory-shortage-assistant/getShortageStatus(material='TG11',plant='{{plant}}')
+
+
+### ==================================================================
+### 10. ERROR HANDLING TESTS
+### ==================================================================
+
+### Invalid plant (should return empty or graceful error)
+GET {{host}}/inventory-shortage-assistant/getShortageStatus(material='{{material}}',plant='INVALID_PLANT')
+
+###
+### Empty question for assistant
+GET {{host}}/inventory-shortage-assistant/askInventoryShortageAssistant(material='{{material}}',plant='{{plant}}')
+
+###
+### Very large weeks parameter (should cap at 12)
+GET {{host}}/inventory-shortage-assistant/getWeeklyShortageTrend(material='{{material}}',plant='{{plant}}',weeks=100)
+
+###
+### Invalid severity value
+GET {{host}}/inventory-shortage-assistant/getMaterialsAtRisk(severity='INVALID_SEVERITY')
+
+
+### ==================================================================
+### 11. PERFORMANCE & QUICK CHECKS
+### ==================================================================
+
+### Quick status for all critical materials
+GET {{host}}/inventory-shortage-assistant/getMaterialsAtRisk(severity='CRITICAL')
+
+###
+### Quick recommendation summary
+GET {{host}}/inventory-shortage-assistant/getRecommendedActions(plant='{{plant}}')
+
+###
+### Quick stock check for specific material
+GET {{host}}/inventory-shortage-assistant/getStockLevel(material='{{material}}',plant='{{plant}}')
+
+###
+### Quick shortage status for material
+GET {{host}}/inventory-shortage-assistant/getShortageStatus(material='{{material}}',plant='{{plant}}')
+
+###
+### Quick materials running out this week
+GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOutThisWeek(plant='{{plant}}')
+
+
+### ==================================================================
+### 12. END-TO-END SCENARIO TESTS
+### ==================================================================
+
+### Complete shortage analysis workflow - Step 1: Check if material is at risk
+GET {{host}}/inventory-shortage-assistant/getShortageStatus(material='{{material}}',plant='{{plant}}')
+
+###
+### Complete shortage analysis workflow - Step 2: Get detailed analysis
+GET {{host}}/inventory-shortage-assistant/getMaterialShortageDetail(material='{{material}}',plant='{{plant}}')
+
+###
+### Complete shortage analysis workflow - Step 3: Get recommendation
+GET {{host}}/inventory-shortage-assistant/getRecommendedActions(plant='{{plant}}')
+
+###
+### Complete shortage analysis workflow - Step 4: Trigger procurement if needed
+POST {{host}}/inventory-shortage-assistant/triggerProcurement
+Content-Type: application/json
+
+{
+  "material": "{{material}}",
+  "plant": "{{plant}}",
+  "quantity": 500,
+  "requiredBy": "2026-08-15",
+  "priority": "HIGH"
+}
+
+###
+### Weekly review scenario - Step 1: Get materials running out this week
+GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOutThisWeek(plant='{{plant}}')
+
+###
+### Weekly review scenario - Step 2: Predict future shortages
+GET {{host}}/inventory-shortage-assistant/predictShortages(plant='{{plant}}',weeksAhead=4)
+
+###
+### Weekly review scenario - Step 3: Get trend analysis for critical material
+GET {{host}}/inventory-shortage-assistant/getWeeklyShortageTrend(material='{{material}}',plant='{{plant}}',weeks=4)
+
+###
+### Joule demo scenario - Step 1: Get simplified running out response
+GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOut(plant='{{plant}}')
+
+###
+### Joule demo scenario - Step 2: Get weekly report with DD-MM-YYYY format
+GET {{host}}/inventory-shortage-assistant/getThisWeekShortages()
+
+###
+### Check shortage status for a specific material
+GET {{host}}/inventory-shortage-assistant/getShortageStatus(material='{{material}}',plant='{{plant}}')
