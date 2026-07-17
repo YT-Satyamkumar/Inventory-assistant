@@ -85,7 +85,7 @@ GET {{host}}/inventory-shortage-assistant/getMaterialsRunningOut()
 
 
 ### ==================================================================
-### 3. PERIODIC SHORTAGE REPORTS (Date-Month-Year Format)
+### 3. PERIODIC SHORTAGE REPORTS (Modified Date-Month-Year Format)
 ### ==================================================================
 
 ### Weekly Shortages Report
